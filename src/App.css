@@ -1,0 +1,260 @@
+.app{
+    width: 100%;
+    height: 100%;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+}
+
+.slide-homepage{
+    height: 100vh;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2vw;
+}
+
+@media screen and (max-width: 1080px){
+    body{
+        display: block;
+    }
+}
+
+.blur-images{
+    z-index: 2;
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(3.1px);
+}
+
+.home-content{
+    z-index: 2;
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+    box-sizing: border-box;
+    padding: 2em;
+}
+
+.home h2{
+    color: #FFFFFF;
+    font-size: 6ch;
+    background-color: #202020;
+    padding: 0.3ch;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .home h2{
+        font-size: 3vh;
+    }
+}
+
+.main-recipes-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1vw;
+    box-sizing: border-box;
+}
+
+.main-recipe{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-recipe img{
+    width: auto;
+    height: 13vw;
+}
+
+.main-recipe h3{
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 1.5vw;
+}
+
+.main-recipe p{
+    color: #ffffffa6;
+    font-size: 1.3vw;
+}
+
+@media screen and (max-width: 520px){
+    .main-recipes-container {
+        flex-wrap: wrap;
+    }
+
+    .main-recipe{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .main-recipe img{
+        height: 25vw;
+    }
+
+    .main-recipe h3{
+        font-size: 3vw;
+    }
+
+    .main-recipe p{
+        font-size: 3vw;
+    }
+}
+
+.about{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2em;
+    box-sizing: border-box;
+    gap: 1vw;
+}
+
+.photos-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 2em;
+}
+
+.about img{
+    width: 300px;
+    height: auto;
+}
+
+.photos-container img:nth-child(2){
+    transform: translateY(5em);
+}
+
+.about-content{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1080px){
+    .about-content{
+        margin-top: 5em;
+        width: 80%;
+    }
+
+    .photos-container{
+        justify-content: center;
+        gap: 1vw;
+    }
+
+    .about img{
+        width: 23vh;
+    }
+}
+
+.about-content p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+}
+
+.about-content p:nth-child(3){
+    font-weight: 800;
+    margin-top: 2em;
+    letter-spacing: 1.3px;
+}
+
+.about-content a{
+    text-decoration: none;
+    color: #c8a97e;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-top: 2vw;
+    font-size: 4vw;
+}
+
+.menu-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    gap: 1em;
+}
+
+.localization-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1vw;
+}
+
+.make-reservation-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding-block: 5vw;
+}
+
+@media screen and (max-width: 850px){
+    .make-reservation-section{
+        height: 80vh;
+    }
+}
