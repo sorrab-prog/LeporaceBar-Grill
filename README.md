@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="leporace-bar-grill.vercel.app" target="_blank" rel="noopener noreferrer">
+  <a href="https://leporace-bar-grill.vercel.app/" target="_blank" rel="noopener noreferrer">
   <img src="./src/assets/img/logo.png" alt="Project logo"></a>
 </p>
 <h3 align="center">Leporace Bar & Grill</h3>
